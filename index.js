@@ -10,5 +10,5 @@ app.get("/", (req, res) => {
   res.status(200).json({ value: 1 });
 });
 
-const PORT = 8000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server started at port: ${PORT}`));
